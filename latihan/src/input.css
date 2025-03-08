@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+
+  --color-clifford: #da373d;
+  --font-inter: "Inter", serif;
+  #toggle:checked ~ label div.toggle-circle {
+    @apply translate-x-4;
+  }
+  @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+  
+}
