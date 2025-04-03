@@ -6,7 +6,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --spacing-13: "3.25rem";
+        --fontFamily-inter: "Inter";
+      }
+    </style>
+    <!--! css -->
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
   </head>
   <body>
     <h1 class="text-6xl font-bold text-center my-10">Mari Belajar <span class="bg-gradient-to-r from-blue-300 to-purple-800 bg-clip-text text-transparent">Tailwindcss</span></h1>
@@ -22,7 +30,7 @@
       <div class="max-w-xs">Kotak 2</div>
     </section>
 
-    <section class="mb-96 font-inter max-w-4xl mx-auto">
+    <section class="font-inter max-w-4xl mx-auto">
       <h2 class="mb-3 text-4xl font-bold">Belajar mengenai typography pada Tailwindcss</h2>
       <div class="mb-4 text-gray-400">By <span class="text-gray-800 font-semibold">Efraim urel</span>, 2 April 2025</div>
       <p class="mb-4">
@@ -34,5 +42,16 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod adipisci quas tempore ipsum corrupti, possimus labore accusantium sit architecto facere ex quibusdam esse, repellat consequatur mollitia laboriosam iusto quis placeat.
       </p>
     </section>
+
+    <div class="max-w-xl h-96 bg-slate-300 mx-auto mt-[42px] overflow-y-scroll bg-fixed bg-cover bg-no-repeat bg-[url(https://images.unsplash.com/photo-1742581659446-6260fc707e7d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)] mb-10">
+      <p class="text-2xl p-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eveniet laborum repudiandae totam inventore, nam itaque ipsa enim sunt sint provident id expedita harum blanditiis autem accusamus dolorum rem est assumenda eligendi cum magni tempora! Rem odio, officiis eaque, reiciendis fugiat, ducimus distinctio ipsa ipsam eos eligendi cum illo mollitia expedita quisquam possimus cupiditate? Libero sed iste et, cumque aliquam atque unde adipisci reiciendis asperiores impedit eius ducimus, illo culpa quaerat aliquid quam ipsam expedita vel a in reprehenderit! Eius?</p>
+    </div>
+    <div class="max-w-xl h-96 bg-cover mx-auto rounded-xl border-2 brightness-150 border-orange-400 shadow-xl inset-shadow-sm inset-shadow-orange-500 bg-blend-multiply overflow-hidden flex bg-[url(https://images.unsplash.com/photo-1742268351428-ba1366f7dae3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)]">
+      <!-- <div class="w-full h-full bg-orange-300 mix-blend-darken"></div> -->
+      <div class="w-[200px] h-[200px] bg-white/30 backdrop-blur-md rounded-full m-auto"></div>
+    </div>
+
+
+    <div class="mb-96"></div>
   </body>
 </html>
