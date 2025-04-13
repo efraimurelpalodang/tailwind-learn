@@ -21,56 +21,67 @@
     </style>
   </head>
   <body>
-    <!-- sidebar -->
-    <div class="md:max-w-50 bg-primary min-h-screen text-tulisan font-inter md:shadow-xl flex flex-col gap-y-10">
-      <!-- brand -->
-      <div class="md:flex md:items-center md:justify-center md:gap-2 mt-5">
-        <span><i class="bi bi-browser-firefox md:text-3xl"></i></span>
-        <h1 class="md:text-xl font-bold uppercase tracking-[.1rem]">Dashboard</h1>
-      </div>
-      <!-- list -->
-      <ul class="ml-3 max-w-full flex flex-col gap-y-3">
-        <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item hover:shadow-2xl">
-          <a href="#" class="nav-link">
-            <i class="bi bi-house-door text-xl mr-3"></i>
-            <span>Dashboard</span>
-          </a>
-        </li>
-        <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
-          <a href="#" class="nav-link">
-            <i class="bi bi-people text-xl mr-3"></i>
-            <span>Costumers</span>
-          </a>
-        </li>
-        <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
-          <a href="#" class="nav-link">
-            <i class="bi bi-chat text-xl mr-3"></i>
-            <span>Message</span>
-          </a>
-        </li>
-        <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
-          <a href="#" class="nav-link">
-            <i class="bi bi-question-lg text-xl mr-3"></i>
-            <span>Help</span>
-          </a>
-        </li>
-        <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
-          <a href="#" class="nav-link">
-            <i class="bi bi-gear text-xl mr-3"></i>
-            <span>Settings</span>
-          </a>
-        </li>
-        <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
-          <a href="#" class="nav-link">
-            <i class="bi bi-key text-xl mr-3"></i>
-            <span>Password</span>
-          </a>
-        </li>
-        <li class="">
+    <div class="flex gap-x-3">
+      <!-- sidebar -->
+      <div class="md:max-w-50 bg-primary min-h-screen text-tulisan font-inter md:shadow-xl flex flex-col gap-y-10">
+        <!-- brand -->
+        <div class="md:flex md:items-center md:justify-center md:gap-2 mt-5 px-3">
+          <span><i class="bi bi-browser-firefox md:text-3xl"></i></span>
+          <h1 class="md:text-xl font-bold uppercase tracking-[.1rem]">Dashboard</h1>
+        </div>
+        <!-- list -->
+        <ul class="ml-3 max-w-full flex flex-col gap-y-3">
+          <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item hover:shadow-2xl">
+            <a href="#" class="nav-link">
+              <i class="bi bi-house-door text-xl mr-3"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-people text-xl mr-3"></i>
+              <span>Costumers</span>
+            </a>
+          </li>
+          <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-chat text-xl mr-3"></i>
+              <span>Message</span>
+            </a>
+          </li>
+          <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-question-lg text-xl mr-3"></i>
+              <span>Help</span>
+            </a>
+          </li>
+          <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-gear text-xl mr-3"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li class="hover:text-primary hover:bg-tulisan py-3 pl-4 rounded-s-full transition-all duration-100 nav-item">
+            <a href="#" class="nav-link">
+              <i class="bi bi-key text-xl mr-3"></i>
+              <span>Password</span>
+            </a>
+          </li>
+        </ul>
+        <div class="ml-7">
           <i class="bi bi-box-arrow-left text-xl mr-3"></i>
           <a href="#">Sign Out</a>
-        </li>
-      </ul>
+        </div>
+      </div>
+
+      <!-- body -->
+      <div class="w-full">
+        <form action="" method="get" class="w-1/3 flex gap-x-2 items-center py-1 px-3 border border-slate-300 rounded-full mx-auto mt-2 transition-all duration-100 shadow-md hover:shadow-sm">
+          <i class="bi bi-search text-slate-500 text-md"></i>
+          <input type="search" name="" id="" placeholder="search..." class="outline-none w-full">
+        </form>
+      </div>
+
     </div>
 
     <!-- my script -->
