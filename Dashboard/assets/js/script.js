@@ -28,3 +28,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 });
+
+$(document).ready(function () {
+  
+  $(".menu").click(function (e) { 
+    e.preventDefault();
+    // animation toogle
+    // $(".menu i").toggleClass("rotate-180");
+
+    // toogle class sidebar
+    const sidebar = $("#sidebar").hasClass("md:max-w-52");
+    (sidebar) ? $("#sidebar").removeClass("md:max-w-52").addClass("md:max-w-15") : $("#sidebar").removeClass("md:max-w-15").addClass("md:max-w-52");
+  });
+
+});
+
+// $('.menu').click(function (e) { 
+//   e.preventDefault();
+//   $('.menu i').css({
+//     transform: "rorate(160deg)"
+//   });
+// });
