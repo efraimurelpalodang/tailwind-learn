@@ -38,14 +38,16 @@ $(document).ready(function () {
 
     // toogle class sidebar
     const sidebar = $("#sidebar").hasClass("md:max-w-52");
-    (sidebar) ? $("#sidebar").removeClass("md:max-w-52").addClass("md:max-w-15") : $("#sidebar").removeClass("md:max-w-15").addClass("md:max-w-52");
+    sidebar ? $("#sidebar").removeClass("md:max-w-52").addClass("md:max-w-15") : $("#sidebar").removeClass("md:max-w-15").addClass("md:max-w-52");
+  });
+
+  // profile animation
+  $('#profile').click(function (e) { 
+    e.preventDefault();
+    const profile = $("#profile").hasClass("-translate-x-36");
+    const pengguna = $("#pengguna .nama").hasClass("scale-0");
+    !profile ? $("#profile").addClass("-translate-x-36") : $("#profile").removeClass("-translate-x-36");
+    pengguna ? $("#pengguna .nama").removeClass("scale-0").addClass("scale-100") : $("#pengguna .nama").removeClass("scale-100").addClass("scale-0");
   });
 
 });
-
-// $('.menu').click(function (e) { 
-//   e.preventDefault();
-//   $('.menu i').css({
-//     transform: "rorate(160deg)"
-//   });
-// });
