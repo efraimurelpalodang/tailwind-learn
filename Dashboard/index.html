@@ -9,14 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
     <!-- icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-primary: oklch(60.9% 0.126 221.723);
         --color-tulisan: rgba(255, 255, 255, 1);
-        --font-inter: 'Inter';
+        --font-inter: "Inter";
       }
     </style>
   </head>
@@ -86,13 +86,18 @@
             <!-- search -->
             <form action="" method="get" class="w-1/3 flex gap-x-2 items-center py-1 px-3 border border-slate-300 rounded-full mx-auto transition-all duration-100 shadow-md hover:shadow-sm h-9">
               <i class="bi bi-search text-slate-500 text-md"></i>
-              <input type="search" name="" id="" placeholder="search..." class="outline-none w-full">
+              <input type="search" name="" id="" placeholder="search..." class="outline-none w-full" />
             </form>
             <!-- prfile -->
             <div>
               <div class="flex justify-between items-center" id="pengguna">
                 <a href="#" class="mr-3">
-                  <img src="https://s7ap1.scene7.com/is/image/aia/Cara%20Bijak%20Menghadapi%20Orang%20dengan%20Gangguan%20Mental%20NPD?qlt=85&ts=1705989166277&dpr=off" alt="profile" class="w-10 h-10 object-cover rounded-full transition-all duration-500 shadow-xl" id="profile">
+                  <img
+                    src="https://s7ap1.scene7.com/is/image/aia/Cara%20Bijak%20Menghadapi%20Orang%20dengan%20Gangguan%20Mental%20NPD?qlt=85&ts=1705989166277&dpr=off"
+                    alt="profile"
+                    class="w-10 h-10 object-cover rounded-full transition-all duration-500 shadow-xl"
+                    id="profile"
+                  />
                 </a>
                 <div class="text-slate-600 absolute right-5 scale-0 nama transition-all duration-500">
                   <a href="#">
@@ -110,48 +115,79 @@
           <div class="grid grid-rows-5 gap-y-6">
             <!-- boxs -->
             <div class="grid grid-cols-4 gap-4">
-              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300 ">
+              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300">
                 <div>
                   <h1 class="font-bold text-3xl">1,504</h1>
                   <p class="font-semibold">Daily Views</p>
                 </div>
                 <i class="bi bi-eye text-4xl"></i>
-              </div>  
-              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300 ">
+              </div>
+              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300">
                 <div>
                   <h1 class="font-bold text-3xl">1,400</h1>
                   <p class="font-semibold">Sales</p>
                 </div>
                 <i class="bi bi-bag-heart text-4xl"></i>
-              </div>  
-              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300 ">
+              </div>
+              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300">
                 <div>
                   <h1 class="font-bold text-3xl">2,350</h1>
                   <p class="font-semibold">Comments</p>
                 </div>
                 <i class="bi bi-chat-quote text-4xl"></i>
-              </div>  
-              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300 ">
+              </div>
+              <div class="border-2 border-slate-50 rounded-lg hover:cursor-pointer row-span-6 shadow-lg flex justify-around items-center text-primary hover:bg-primary hover:text-tulisan hover:border-none transition-all duration-300">
                 <div>
                   <h1 class="font-bold text-3xl">$ 7,842</h1>
                   <p class="font-semibold">Earning</p>
                 </div>
                 <i class="bi bi-cash-stack text-4xl"></i>
-              </div>  
+              </div>
             </div>
 
             <!-- start main -->
             <div class="grid grid-cols-4 gap-x-3 row-span-4">
-              <div class="border-2 border-slate-50 text-slate-400 rounded-lg col-span-3 shadow-xl">
-                <h1>Recents Orders</h1>
+              <!-- left -->
+              <div class="border-2 p-3 border-slate-50 text-slate-400 rounded-lg col-span-3 shadow-xl">
+                <div class="grid grid-rows-4 gap-y-10">
+                  <!-- sub 1 -->
+                  <div class="grid grid-cols-2 gap-3">
+                    <div class="">
+                      <h1 class="text-lg font-semibold">Recents Orders</h1>
+                    </div>
+                    <div class="flex justify-end items-center">
+                      <a href="#" class="block px-2 py-0.5 text-white bg-primary rounded-sm text-sm">View All</a>
+                    </div>
+                  </div>
+                  <!-- subs 2 -->
+                  <div class="row-span-6">
+                    <table class="min-w-full divide-y divide-gray-200">
+                      <thead class="bg-gray-100">
+                        <tr class="grid grid-cols-5">
+                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider col-span-2">Name</th>
+                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Price</th>
+                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Payment</th>
+                          <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody class="bg-white divide-y divide-gray-200">
+                        <tr class="grid grid-cols-5 border-b border-slate-300">
+                          <td class="px-6 py-4 whitespace-nowrap col-span-2">Rangga Madhipa Sutra </td>
+                          <td class="px-6 py-4 whitespace-nowrap">$ 5000</td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-orange-600">ShopeePay</td>
+                          <td class="px-6 py-4 whitespace-nowrap text-sm text-green-600">In Progress</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
+              <!-- right -->
               <div class="bg-primary"></div>
-
             </div>
           </div>
         </div>
       </div>
-
     </div>
 
     <!-- my script -->
