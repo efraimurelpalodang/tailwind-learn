@@ -14,9 +14,14 @@
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <style type="text/tailwindcss">
       @theme {
-        --color-primary: oklch(60.9% 0.126 221.723);
+        --color-primary: #0891b2;
         --color-tulisan: rgba(255, 255, 255, 1);
         --font-inter: "Inter";
+      }
+      @layer components {
+        .poto-profile {
+          @apply w-10 h-10 object-cover rounded-full transition-all duration-500 shadow-xl;
+        }
       }
     </style>
   </head>
@@ -88,14 +93,14 @@
               <i class="bi bi-search text-slate-500 text-md"></i>
               <input type="search" name="" id="" placeholder="search..." class="outline-none w-full" />
             </form>
-            <!-- prfile -->
+            <!-- profile -->
             <div>
               <div class="flex justify-between items-center" id="pengguna">
                 <a href="#" class="mr-3">
                   <img
                     src="https://s7ap1.scene7.com/is/image/aia/Cara%20Bijak%20Menghadapi%20Orang%20dengan%20Gangguan%20Mental%20NPD?qlt=85&ts=1705989166277&dpr=off"
                     alt="profile"
-                    class="w-10 h-10 object-cover rounded-full transition-all duration-500 shadow-xl"
+                    class="poto-profile"
                     id="profile"
                   />
                 </a>
@@ -183,7 +188,18 @@
                 </div>
               </div>
               <!-- right -->
-              <div class="bg-primary"></div>
+              <div class="rounded-lg shadow-xl flex flex-col gap-y-2 p-2">
+                <div class="text-slate-400">
+                  <h1 class="font-semibold text-lg">Racent Customers</h1>
+                </div>
+                <div class="flex items-center gap-x-4 py-2 px-3 hover:cursor-pointer hover:bg-primary transition-all duration-300 group">
+                  <img src="https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/63/2023/07/18/278904010_332434105540706_5703095942165431083_n-1813902612.jpg" alt="gambar" class="poto-profile">
+                  <div class="flex flex-col text-primary group-hover:text-white">
+                    <h1 class="text-[1rem] font-semibold">Callum Jasper Gavin</h1>
+                    <p class="-my-1 text-red-800 group-hover:text-red-200">Indonesian</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
